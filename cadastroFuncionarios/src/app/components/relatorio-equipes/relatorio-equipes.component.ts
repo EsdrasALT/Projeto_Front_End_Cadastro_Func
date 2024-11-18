@@ -9,5 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./relatorio-equipes.component.css']
 })
 export class RelatorioEquipesComponent  {
-  // Código da lógica do componente, se necessário.
+  equipes = [
+    { nome: 'Time Financeiro', numero: 1 },
+    { nome: 'Time Recursos Humanos', numero: 1 },
+    { nome: 'Time Marketing', numero: 1 },
+    { nome: 'Time Tecnologia da Informação', numero: 1 },
+  ];
 }

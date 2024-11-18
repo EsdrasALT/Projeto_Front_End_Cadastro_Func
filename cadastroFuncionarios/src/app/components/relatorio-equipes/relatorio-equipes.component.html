@@ -1,1 +1,21 @@
-<p>relatorio-equipes works!</p>
+<header>
+    <nav>
+      <ul>
+        <li><a href="#">Empregados</a></li>
+        <li><a href="#">Equipes</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Entrar</a></li>
+        <li><a href="#">Registrar</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Equipes</h1>
+    <ul>
+      <li *ngFor="let equipe of equipes">
+        {{ equipe.nome }} {{ equipe.numero }}
+      </li>
+    </ul>
+  </main>
+  

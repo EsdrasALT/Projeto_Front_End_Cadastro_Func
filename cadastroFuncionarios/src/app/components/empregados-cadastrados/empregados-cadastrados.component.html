@@ -1,1 +1,43 @@
-<p>empregados-cadastrados works!</p>
+<header>
+    <nav>
+      <ul>
+        <li><a href="#">Empregados</a></li>
+        <li><a href="#">Equipes</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Entrar</a></li>
+        <li><a href="#">Registrar</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Empregados Cadastrados</h1>
+    <h2>Relatório da Empresa - Filial 1</h2>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Setor</th>
+          <th>Equipe</th>
+          <th>Cargo</th>
+          <th>Data de Admissão</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let empregado of empregados">
+          <td>{{ empregado.nome }}</td>
+          <td>{{ empregado.setor }}</td>
+          <td>{{ empregado.equipe }}</td>
+          <td>{{ empregado.cargo }}</td>
+          <td>{{ empregado.admissao }}</td>
+          <td>
+            <button (click)="editarEmpregado(empregado.nome)">Editar</button>
+            <button (click)="excluirEmpregado(empregado.nome)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  
