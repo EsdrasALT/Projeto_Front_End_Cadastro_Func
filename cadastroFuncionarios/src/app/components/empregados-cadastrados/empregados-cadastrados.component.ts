@@ -41,6 +41,11 @@ export class EmpregadosCadastradosComponent {
     },
   ];
 
+  adicionarEmpregado() {
+    console.log('Adicionar Funcionário acionado!');
+    // Você pode implementar lógica adicional aqui, como abrir um modal ou redirecionar para outra página
+  }  
+
   editarEmpregado(nome: string) {
     console.log(`Editar: ${nome}`);
   }

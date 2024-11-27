@@ -1,21 +1,9 @@
-<header>
-    <!-- <nav>
-      <ul>
-        <li><a href="#">Empregados</a></li>
-        <li><a href="#">Equipes</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Entrar</a></li>
-        <li><a href="#">Registrar</a></li>
-      </ul>
-    </nav> -->
-  </header>
-  
-  <main>
-    <h1>Equipes</h1>
-    <ul>
-      <li *ngFor="let equipe of equipes">
-        {{ equipe.nome }} {{ equipe.numero }}
-      </li>
-    </ul>
-  </main>
-  
+<main>
+  <h1>Equipes</h1>
+  <div class="equipe-container">
+    <div class="equipe-card" *ngFor="let equipe of equipes">
+      <img src="assets/{{ equipe.imagem }}" alt="{{ equipe.nome }}" />
+      <h2>{{ equipe.nome }} {{ equipe.numero }}</h2>
+    </div>
+  </div>
+</main>
