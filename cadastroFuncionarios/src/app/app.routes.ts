@@ -9,9 +9,9 @@ export const routes: Routes = [
   { path: '', redirectTo: '/pagina-principal', pathMatch: 'full' },
   { path: 'pagina-principal', component: PaginaPrincipalComponent },
   { path: 'empregados-cadastrados', component: EmpregadosCadastradosComponent },
-  { path: 'relatorio-equipes', component: RelatorioEquipesComponent },
-
+  { path: 'relatorio-equipes', component: RelatorioEquipesComponent }
 ];
+
 
   bootstrapApplication(AppComponent, {
     providers: [provideRouter(routes)]
